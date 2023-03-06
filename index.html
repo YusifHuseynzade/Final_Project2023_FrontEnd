@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Assets/css/index.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabriela">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kurale">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Upright">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/font-awesome-line-awesome/css/all.min.css" integrity="sha512-dC0G5HMA6hLr/E1TM623RN6qK+sL8sz5vB+Uc68J7cBon68bMfKcvbkg6OqlfGHo1nMmcCxO5AinnRTDhWbWsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <nav class="navbar__responsive">
+        <div class="wrapper">
+          <div class="logo"><a href="#"><img src="/Images/navbar/nav-logo.png" alt="logo"/></a></div>
+          <input type="radio" name="slider" id="menu__btn">
+          <input type="radio" name="slider" id="close__btn">
+          <ul class="nav__links">
+            <label for="close__btn" class="btn close__btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#" class="desktop__item">Pages</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile__item">Pages</label>
+              <ul class="drop__menu">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="404_error.html">404 Page</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="forgotpassword.html">Forgot Password</a></li>
+                <li><a href="resetpassword.html">Reset Password</a></li>
+              </ul>
+            </li>
+            <li>
+                <a href="#" class="desktop__item">Shop</a>
+                <input type="checkbox" id="showDrop2">
+                <label for="showDrop2" class="mobile__item">Shop</label>
+                <ul class="drop__menu">
+                  <li><a href="shop.html">Shop</a></li>
+                  <li><a href="shop_cart.html">Shop Cart</a></li>
+                  <li><a href="profile.html">My Account</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop__item">Recipe</a>
+                <input type="checkbox" id="showDrop3">
+                <label for="showDrop3" class="mobile__item">Recipe</label>
+                <ul class="drop__menu">
+                  <li><a href="recipe.html">Recipe</a></li>
+                  <li><a href="recipe_detail.html">Recipe Detail</a></li>
+                </ul>
+              </li>
+            <li>
+            <li><a href="food_detail.html">Food Deatil</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <label for="menu__btn" class="btn menu__btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+    <nav class="header">
+        <div class="navbar">
+          <img src="/Images/navbar/nav-logo.png" alt="logo"/>
+          <ul class="navbar__menu">
+            <li class="navbar__menu__dropdown">
+              <a href="index.html">home</a>
+            </li>
+            <li class="navbar__menu__dropdown bottom__line">
+              <a href="/index.html">pages</a>
+              <ul class="second__menu">
+                <li class="second__menu__item">
+                  <a href="/login.html"><span class="bottom__line">login</span></a>
+                </li>
+                <li class="second__menu__item">
+                  <a href="/404_error.html"><span class="bottom__line">404 page</span> </a>
+                </li>
+                <li class="second__menu__item">
+                  <a href="/register.html"><span class="bottom__line">register</span> </a>
+                </li>
+                <li class="second__menu__item">
+                    <a href="/checkout.html"><span class="bottom__line">checkout</span> </a>
+                  </li>
+                  <li class="second__menu__item">
+                    <a href="forgotpassword.html"><span class="bottom__line">forgot password</span> </a>
+                  </li>
+                  <li class="second__menu__item">
+                    <a href="resetpassword.html"><span class="bottom__line">reset password</span> </a>
+                  </li>
+              </ul>
+            </li>
+            <li class="navbar__menu__dropdown bottom__line">
+                <a href="/shop.html">Shop</a>
+                <ul class="second__menu">
+                  <li class="second__menu__item">
+                    <a href="/shop_cart.html"><span class="bottom__line">shop cart</span></a>
+                  </li>
+                  <li class="second__menu__item">
+                    <a href="/profile.html"><span class="bottom__line">my account</span></a>
+                  </li>
+                </ul>
+              </li>
+            <li class="navbar__menu__dropdown bottom__line">
+              <a href="/recipe.html">Recipe</a>
+              <ul class="second__menu">
+                <li class="second__menu__item">
+                  <a href="recipe_detail.html"><span class="bottom__line">recipe detail</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__menu__dropdown bottom__line">
+              <a href="/food_detail.html">Food Detail</a>
+            </li>
+            <li class="navbar__menu__dropdown bottom__line">
+              <a href="contact.html">Contact</a>
+            </li>
+            <input id="search__input" type="search" placeholder="Search" class="me-3">
+            <a href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">3</span></a>
+          </ul>
+        </div>
+    </nav>
+    <div class="container__shopping__cart">
+        <div class="shopping__cart">
+          <div class="shopping__cart__header">
+            <i class="fa fa-shopping-cart cart__icon"></i><span class="badge">3</span>
+            <div class="shopping__cart__total">
+              <span>Total:</span>
+              <span>$87.97</span>
+            </div>
+          </div> 
+          <ul class="shopping__cart__items">
+            <li class="clearfix">
+              <img src="/Images/menu/food1.jpg" alt="item1" />
+              <span class="item__name">Steak...</span>
+              <span class="item__price">$9.99</span>
+              <span class="item__quantity">Quantity: 01</span>
+            </li>
+      
+            <li class="clearfix">
+              <img src="/Images/menu/food6.jpg" alt="item1" />
+              <span class="item__name">Cizburger...</span>
+              <span class="item__price">$49.99</span>
+              <span class="item__quantity">Quantity: 01</span>
+            </li>
+      
+            <li class="clearfix">
+              <img src="/Images/menu/food3.jpg" alt="item1" />
+              <span class="item__name">Hamburger...</span>
+              <span class="item__price">$29.99</span>
+              <span class="item__quantity">Quantity: 01</span>
+            </li>
+          </ul>
+          <div class="text-center mb-3">
+            <a href="https://twitter.com/Dave_Conner" class="button">Checkout</a>
+          </div>
+        </div> 
+      </div> 
+    <section class="index__header" id="header__fixed">
+        <div class="overlay reveal active">
+        <div class="container__header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <a href="#"><img src="/Images/index_header/logo.png" alt="logo" class="index__header__img"></a>
+                        <h1 class="header__h1">DELICIOUS FOOD</h1>
+                        <p class="header__p">Tomato is a delitious restaurant website template</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="brush__dec"></div>
+    </section>
+    <div class="up__button">
+        <a href="#" class="up__button__icon">
+            <i class="fa-sharp fa-solid fa-angles-up"></i>
+        </a>
+      </div>
+    <section class="about">
+        <div class="row reveal">
+            <div class="col-lg-12">
+                <div class="pages__header text-center">
+                    <h2 class="about__h2">THE RESTAURANT</h2>
+                    <p class="about__p">A little about us and a breif history of how we started.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row reveal">
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img src="/Images/about/thumb1.png" alt="food" class="w-100">
+                    </div>
+                </div>
+                <div class="row img__distance">
+                    <div class="col-lg-6"><img src="/Images/about/thumb2.png" alt="food" class="img__down"></div> 
+                    <div class="col-lg-6"><img src="/Images/about/thumb3.png" alt="food" class="img__down"></div> 
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <p class="about__p">Cras ut viverra eros. Phasellus sollicitudin sapien id luctus tempor. Sed hend rerit inter dum sagittis. Donec nunc lacus, dapibus nec interdum eget, ultrices eget justo. Nam purus lacus, efficitur eget laoreet sed, finibus nec neque. Cras eget enim in diam dapibus sagittis. In massa est, dignissim in libero ac, fringilla ornare mi. Etiam interdum ligula purus.</p>
+                <p class="about__p">Ultrices eget justo. Nam purus lacus, efficitur eget laoreet sed, finibus nec neque. Cras eget enim in diam dapibus sagittis. In massa est, dignissim in libero ac, fringilla ornare.</p>
+                <img src="/Images/about/signature.png" alt="signature" class="signature__img">
+            </div>
+        </div>
+        <div class="brush__dec"></div>
+    </section>
+    <section class="blog" id="blog__background__fixed">
+        <div class="container__blog">
+            <div class="row reveal">
+                <div class="col-lg-12">
+                    <div class="pages__header text-center">
+                        <h2 class="blog__h2">BLOG</h2>
+                        <p class="blog__p">A little about us and a breif history of how we started.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row reveal">
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="blog__img">
+                                    <img src="/Images/blog/thumb4.png">
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="blog__header">
+                                    <h2 class="blog__slider__h2"> Pancake with Caramel</h2>
+                                    <p class="blog__slider__p">If you are a fan of caramel cake, then you'll love our Pancake with caramel icecream. It's not thick, but very tasty.</p>
+                                </div>
+                                    <p class="blog__slider__p">Ultrices In massa est, dignissim in libero ac, fringilla ornare mi.Ultrices eget justo. Nam purus lacus, efficitur eget laoreet sed, finibus nec neque. Cras eget enim in diam dapibus sagittis. accumsan, habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                    <a href="checkout.html"><button class="button__blog btn__font ms-2" type="submit">ADD TO CART</button></a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="blog__img">
+                                    <img src="/Images/blog/cantina-mexico-cabo-food-03.jpg">
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="blog__header">
+                                    <h2 class="blog__slider__h2"> Pancake with Caramel</h2>
+                                    <p class="blog__slider__p">If you are a fan of caramel cake, then you'll love our Pancake with caramel icecream. It's not thick, but very tasty.</p>
+                                </div>
+                                    <p class="blog__slider__p">Ultrices In massa est, dignissim in libero ac, fringilla ornare mi.Ultrices eget justo. Nam purus lacus, efficitur eget laoreet sed, finibus nec neque. Cras eget enim in diam dapibus sagittis. accumsan, habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                    <a href="checkout.html"><button class="button__blog btn__font ms-2" type="submit">ADD TO CART</button></a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="blog__img">
+                                    <img src="/Images/blog/cheeseburger-bread_720x560.jpg">
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="blog__header">
+                                    <h2 class="blog__slider__h2"> Pancake with Caramel</h2>
+                                    <p class="blog__slider__p">If you are a fan of caramel cake, then you'll love our Pancake with caramel icecream. It's not thick, but very tasty.</p>
+                                </div>
+                                    <p class="blog__slider__p">Ultrices In massa est, dignissim in libero ac, fringilla ornare mi.Ultrices eget justo. Nam purus lacus, efficitur eget laoreet sed, finibus nec neque. Cras eget enim in diam dapibus sagittis. accumsan, habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                    <a href="checkout.html"><button class="button__blog btn__font ms-2" type="submit">ADD TO CART</button></a>
+                                </div>
+                        </div>
+                    </div>
+                  
+                    <a class="prev__angel" onclick="plusSlides(-1, 0)"><i class="fa-solid fa-angle-left"></i></a>
+                    <a class="next__angel" onclick="plusSlides(1, 0)"><i class="fa-solid fa-angle-right"></i></a>
+                  </div>
+            </div>
+        </div>
+        <div class="brush__dec"></div>
+    </section>
+    <section class="reservation">
+        <div class="row reveal">
+            <div class="col-lg-12">
+                <div class="pages__header text-center">
+                    <h2 class="reservation__h2">RESERVATIONS</h2>
+                    <p class="reservation__p">Book a table online. Leads will reach in your email.</p>
+                </div>
+            </div>
+        </div>
+        <form class="reservation__form reveal">
+            <div class="row">
+            <div class="col-lg-4">
+                <div class="position-relative">
+                    <label class="reservation__label__font mb-2">Date</label>
+                    <input type="date" class="form-control mb-3 form__background__color" placeholder="Pick a date">
+                    <i class="fa-solid fa-calendar"></i>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="position-relative">
+                    <label class="reservation__label__font mb-2">Your Name</label>
+                    <input type="text" class="form-control mb-4 form__background__color" placeholder="Full Name">
+                    <i class="fa-solid fa-square-pen"></i>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="position-relative">
+                    <label class="reservation__label__font mb-2">Time</label>
+                    <input type="time" class="form-control mb-4 form__background__color" placeholder="Pick a time">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="position-relative">
+                    <label class="reservation__label__font mb-2">Email Address</label>
+                    <input type="text" class="form-control mb-3 form__background__color" placeholder="Your Email ID">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="position-relative">
+                    <label class="reservation__label__font mb-2">Guests</label>
+                    <input type="text" class="form-control mb-4 form__background__color" placeholder="How many of you?">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="position-relative">
+                    <label class="reservation__label__font mb-2">Phone Number</label>
+                    <input type="text" class="form-control mb-4 form__background__color" placeholder="Enter your Phone Number">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+            </div>
+            <div class="col-lg-12 text-center">
+                <a href="checkout.html"><button class="button__reservation btn__font ms-2" type="submit">MAKE RESERVATION</button></a>
+            </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="reservation__footer text-center">
+                    <p>You can also call: <strong>+99455-227-05-53</strong> to make a reservation.</p>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features" id="feature__background__fixed">
+        <div class="container__feature">
+        <div class="row reveal">
+            <div class="col-lg-12">
+                <div class="pages__header text-center">
+                    <h2 class="feature__h2">OUR FEATURES</h2>
+                    <p class="feature__p">Little things make us best in town.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row reveal">
+            <div class="col-lg-4">
+                <div class="cart__background__color">
+                    <div class="feature__img">
+                        <img src="/Images/features/thumb5.png" alt="img-feature">
+                    </div>
+                    <div class="feature__content">
+                        <h3 class="feature__h3 cart__h2__color bottom__line">SERVING WITH LOVE</h3>
+                        <p class="feature__p cart__p__color">Aenean suscipit vehicula purus quis iaculis. Aliquam nec leo nisi. Nam urna arcu, maximus eget ex nec, consequat pellentesque enim. Aliquam tempor fringilla odio, vel ullamcorper turpis varius eu.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="cart__background__color">
+                    <div class="feature__img">
+                        <img src="/Images/features/thumb6.png" alt="img-feature">
+                    </div>
+                    <div class="feature__content">
+                        <h3 class="feature__h3 cart__h2__color bottom__line">SERVING WITH LOVE</h3>
+                        <p class="feature__p cart__p__color">Aenean suscipit vehicula purus quis iaculis. Aliquam nec leo nisi. Nam urna arcu, maximus eget ex nec, consequat pellentesque enim. Aliquam tempor fringilla odio, vel ullamcorper turpis varius eu.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="cart__background__color">
+                    <div class="feature__img">
+                        <img src="/Images/features/thumb7.png" alt="img-feature">
+                    </div>
+                    <div class="feature__content">
+                        <h3 class="feature__h3 cart__h2__color bottom__line">SERVING WITH LOVE</h3>
+                        <p class="feature__p cart__p__color">Aenean suscipit vehicula purus quis iaculis. Aliquam nec leo nisi. Nam urna arcu, maximus eget ex nec, consequat pellentesque enim. Aliquam tempor fringilla odio, vel ullamcorper turpis varius eu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="brush__dec"></div>
+    </section>
+    <section class="menu">
+        <div class="row reveal">
+            <div class="col-lg-12">
+                <div class="pages__header text-center">
+                    <h2 class="menu__h2">OUR MENU</h2>
+                    <p class="menu__p">These fine folks trusted the award winning restaurant.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tabs__stylish reveal">
+            <input type="radio" name="tabs__stylish" id="tab1" checked >
+            <label for="tab1">
+                <i class="fa-solid fa-mug-saucer menu__icon"></i>
+                <span class="font__detail">BREAKFAST </span>
+            </label>
+        <input type="radio" name="tabs__stylish" id="tab2">
+            <label for="tab2">
+                <i class="fa-solid fa-utensils menu__icon"></i>
+                <span class="font__detail">LAUNCH </span>
+            </label>
+        <input type="radio" name="tabs__stylish" id="tab3">
+            <label for="tab3">
+                <i class="fa-solid fa-cow menu__icon"></i>
+                <span class="font__detail">DINNER </span>
+            </label>
+        <input type="radio" name="tabs__stylish" id="tab4">
+            <label for="tab4">
+                <i class="fa-solid fa-stroopwafel menu__icon"></i>
+                <span class="font__detail">DESERT </span>
+            </label>
+            <input type="radio" name="tabs__stylish" id="tab5">
+            <label for="tab5">
+                <i class="fa-solid fa-martini-glass menu__icon"></i>
+                <span class="font__detail">DRINKS </span>
+            </label>
+            <input type="radio" name="tabs__stylish" id="tab6">
+            <label for="tab6">
+                <i class="fa-solid fa-cookie-bite menu__icon"></i>
+                <span class="font__detail">SIDES </span>
+            </label>
+            <div id="tab__content1" class="tab__content">
+                <div class="row">
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food1.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food2.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food3.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food4.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food5.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food6.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food7.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food8.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab__content2" class="tab__content">
+                <div class="row">
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food1.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food2.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food3.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food4.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food5.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food6.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food7.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food8.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab__content3" class="tab__content">
+                <div class="row">
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food1.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food2.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food3.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food4.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food5.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food6.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food7.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food8.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab__content4" class="tab__content">
+                <div class="row">
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food1.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food2.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food3.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food4.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food5.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food6.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food7.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food8.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+            <div id="tab__content5" class="tab__content">
+                <div class="row">
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food1.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food2.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food3.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food4.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food5.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food6.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food7.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food8.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div id="tab__content6" class="tab__content">
+                <div class="row">
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food1.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food2.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food3.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food4.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food5.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food6.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food7.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 display__flex mb-4">
+                        <img src="/Images/menu/food8.jpg" class="menu__img">
+                        <div class="item__header">
+                            <h5>ENGLISH ASPARAGUS</h5>
+                            <span class="price">$14.95</span>
+                            <div class="dotted__bg"></div>
+                            <p class="tab__menu__p mt-2">Piled with shrimp, calamari, clams, mussels, surimi and stretchy iced moarella.</p>
+                            <a href="https://twitter.com/Dave_Conner" class="button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="editor"></div>
+            <div class="text-center mb-3">
+                <button class="pdf__download">
+                <table>
+                  <tr>
+                    <td><img src="http://www.clker.com/cliparts/b/2/c/b/13534493561426065224Adobe%20Icon.svg.med.png"></td>
+                    <td><p class="button__p"><a href="#" id="cmd">download pdf</a></p></td>
+                  </tr>
+                </table>
+              </button>
+              </div>
+        </div>
+    </section>
+    <section class="comment" id="comment__background__fixed">
+        <div class="container__comment background__fixed">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="mb-3 reveal">
+                <h4 class="comment__h4">What said about us</h4>
+                <h2 class="comment__h2">CUSTOMER REVIEWS</h2>
+                <small></small>
+                </div>
+                <div class="swiper reveal">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="/Images/comment/Apostrophe-Silhouette.png" class="img__top">
+                        <img src="/Images/comment/Apostrophe-Silhouette-PNG-Pic.png" class="img__bottom">
+                        <i class="fa-solid fa-user text-center user__icon"></i>
+                        <p class="customer__name">Centa Simpson</p>
+                        <div class="comment__ratings">
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-regular fa-star active icon__size"></i></span>
+                          </div>
+                          <p>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/Images/comment/Apostrophe-Silhouette.png" class="img__top">
+                        <img src="/Images/comment/Apostrophe-Silhouette-PNG-Pic.png" class="img__bottom">
+                        <i class="fa-solid fa-user text-center user__icon"></i>
+                        <p class="customer__name">Centa Simpson</p>
+                        <div class="comment__ratings">
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-regular fa-star active icon__size"></i></span>
+                          </div>
+                          <p>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/Images/comment/Apostrophe-Silhouette.png" class="img__top">
+                        <img src="/Images/comment/Apostrophe-Silhouette-PNG-Pic.png" class="img__bottom">
+                        <i class="fa-solid fa-user text-center user__icon"></i>
+                        <p class="customer__name">Centa Simpson</p>
+                        <div class="comment__ratings">
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-regular fa-star active icon__size"></i></span>
+                          </div>
+                          <p>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/Images/comment/Apostrophe-Silhouette.png" class="img__top">
+                        <img src="/Images/comment/Apostrophe-Silhouette-PNG-Pic.png" class="img__bottom">
+                        <i class="fa-solid fa-user text-center user__icon"></i>
+                        <p class="customer__name">Centa Simpson</p>
+                        <div class="comment__ratings">
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-regular fa-star active icon__size"></i></span>
+                          </div>
+                          <p>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."</p>
+                      </div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="brush__dec"></div>
+    </section>
+    <section class="awards">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="pages__header text-center">
+                    <h2 class="awards__h2 reveal">TRUSTED BY</h2>
+                    <p class="awards__p reveal">These fine folks trusted tha award winning restaurant</p>
+                </div>
+            </div>
+            <div class="swiper__award reveal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/Images/awards/foodsquare.png" class="img__top awards__img__size">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/Images/awards/opentable.png" class="img__top awards__img__size">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/Images/awards/tripadvisor.png" class="img__top awards__img__size">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/Images/awards/zomato.png" class="img__top awards__img__size">
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="brush__dec"></div>
+    </section>
+    <footer class="footer" id="footer__img__fixed">
+        <div class="container__footer">
+            <div class="row reveal">
+                <div class="col-lg-4 padding__right__left w__50__resp">
+                    <h2 class="footer__h2 mb-4"><span class="span__color">Our</span> Location</h2>
+                    <div clas="footer__content">
+                    <ul>
+                        <li><span>Head Office:</span> 1422 Makram St. Santa Rosa,t CA 94559. Texas, USA</li>
+                        <li><span>Call for Reservations:</span> +1 - 123456789 - 245789789</li>
+                        <li><span>E-mail:</span> information@deliciousa.com</li>
+                    </ul>
+                    <div class="social__media">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 padding__right__left w__50__resp"> 
+                    <h2 class="footer__h2 mb-4"><span class="span__color">Opening</span> Times</h2>
+                    <div clas="footer__content">
+                    <ul>
+                        <li>Monday <span class="right__side">1 pm - 10 pm</span></li>
+                        <li>Tuesday <span class="right__side">1 pm - 10 pm</span></li>
+                        <li>Wednesday <span class="right__side">1 pm - 10 pm</span></li>
+                        <li>Thursday <span class="right__side">1 pm - 10 pm</span></li>
+                        <li>Friday <span class="right__side">1 pm - 10 pm</span></li>
+                        <li>Saturday <span class="right__side">1 pm - Midnight</span></li>
+                        <li>Sunday <span class="right__side">1 pm - Midnight</span></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 padding__right__left align__center__resp">
+                    <h2 class="footer__h2 mb-4"><span class="span__color">Instagram</span> Gallery</h2>
+                    <div clas="row">
+                        <div class="col-lg-12 mb-2">
+                            <a href=""><img src="/Images/footer/img1.jpg"></a>
+                            <a href=""><img src="/Images/footer/img2.jpg"></a>
+                            <a href=""><img src="/Images/footer/img3.jpg"></a>
+                            <a href=""><img src="/Images/footer/img4.jpg"></a>
+                        </div>
+                        <div class="col-lg-12">
+                            <a href=""><img src="/Images/footer/img5.jpg"></a>
+                            <a href=""><img src="/Images/footer/img6.jpg"></a>
+                            <a href=""><img src="/Images/footer/img7.jpg"></a>
+                            <a href=""><img src="/Images/footer/img8.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyrights">
+            <div class="container__copyrights">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="footer__p"><i class="fa-solid fa-copyright icon__detail"></i>2015.Tomato.All rights reserved. Designed with<i class="fa-solid fa-heart icon__detail"></i>by Surjithctly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+    <script src="Assets/js/download.js"></script>
+    <script src="Assets/js/scroll__button.js"></script>
+    <script src="Assets/js/blog_slider.js"></script>
+    <script src="Assets/js/recipe_carousel.js"></script>
+    
+</body>
+</html>

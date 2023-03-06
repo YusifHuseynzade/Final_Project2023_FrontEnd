@@ -1,0 +1,314 @@
+@import "./_variables.scss";
+@import "./_mixin.scss";
+
+.recipe {
+    padding-bottom: 60px;
+    margin-left: 13%;
+    margin-right: 13%;
+  
+    .button__recipe {
+        line-height: 35px;
+        border: none;
+        font-weight: 600;
+        height: 40px;
+        text-align: center;
+        width: 150px;
+        cursor: pointer;
+      }
+      .btn__detail {
+        background-color: $background__color__btn1;
+        transition: all 0.5s;
+        position: relative; 
+        &:hover {
+            background-color: $background__color__white;
+        }
+      }
+      
+      .btn__detail::before {
+        content: '';
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $background__color__btn2;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 0.5s;
+      }
+      .btn__detail::after {
+        content: '';
+        border-radius: 5px;
+        background-color: $background__color__btn2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 0.5s;
+      }
+      .btn__detail:hover::before {
+        border-radius: 5px;
+        transform: rotate(-45deg);
+        background-color: $background__color__btn2;
+      }
+      .btn__detail:hover::after {
+        border-radius: 5px;
+        transform: rotate(45deg);
+        background-color: $background__color__btn2;
+      }
+
+      .recipe__font__h4 {
+        font-weight: 700;
+        color: $color__dark__gray;
+        font-family: $font__family__kurale;
+      }
+      .recipe__font__h5 {
+        font-weight: 700;
+        color: $color__dark__gray;
+        font-family: $font__family__kurale;
+      }
+      .recipe__font__p {
+        font-family: $font__family__cormorant;
+        font-size: 19px;
+        font-weight: 700;
+        color: $color__light__black;
+      }
+      .ratings {
+            margin: 12px 0 10px;
+            & span {
+                color: #cdcdcd;
+                font-size: 16px;
+            }
+            .active {
+                color: $color__yellow;
+            }
+      }
+      .recipe__icon__size {
+        font-size: 13px;
+      }
+      .recipe__decor__a {
+        text-decoration: none;
+        font-family: $font__family__cormorant;
+        font-weight: 600;
+        font-size: 15px;
+        color: $color__black;
+      }
+    
+      .recipe__img {
+        border-radius: 5px;
+        transition: 0.4s;
+        &:hover {
+            rotate: -15deg;
+        }
+      }
+
+      .swiper {
+        padding-bottom: 60px;
+        height: 325px;
+        .swiper-wrapper {
+          align-items: center;
+        }
+        .swiper-slide {
+          border-radius: 5px;
+          height: 220px;
+          border: 1px solid $color__white;
+          transition: 0.2s;
+        }
+        .pagination {
+          margin-left: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 40px;
+          z-index: 100;
+          span {
+            font-size: 0;
+            opacity: 1;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #e8e8e8;
+            margin-left: 6px;
+            &.swiper-pagination-bullet-active {
+              background-color: $color__yellow;
+              transform: scale(1.5);
+            }
+          }
+        }
+      }
+      .load {
+        display: none;
+      }
+      .bottom__line {
+        padding: 70px 0;
+        border-bottom: 1px solid #a7a6a6;
+      }
+
+    
+}
+
+@media (max-width:576px) {
+  .recipe {
+   .load {
+     text-align: center!important;
+   }
+   .recipe__img {
+     max-width: 50%!important;
+     margin-bottom: 10px!important;
+   }
+   .swiper {
+            height: 250px!important;
+            & .swiper-slide {
+                height: 125px!important;
+            }
+    }
+    .button {
+     margin-bottom: 20px!important;
+    }
+  }
+   .recipe__font__h5 {
+    font-size: 15px!important;
+   }
+   .img__resp {
+    max-width: 150%!important;
+   }
+  
+   .recipe__icon__size {
+    font-size: 8px!important;
+   }
+}
+
+  @media (min-width:576px) and (max-width:768px) {
+   .recipe {
+   .load {
+     text-align: center!important;
+   }
+   .recipe__img {
+     max-width: 50%!important;
+     margin-bottom: 10px!important;
+   }
+   .swiper {
+     height: 250px!important;
+     & .swiper-slide {
+         height: 150px!important;
+     }
+   }
+   .button {
+     margin-bottom: 20px!important;
+    }
+   }
+    .recipe__font__h5 {
+     font-size: 16px!important;
+    }
+    .img__resp {
+     max-width: 125%!important;
+    }
+ 
+ .recipe__icon__size {
+     font-size: 10px!important;
+ }
+      
+}
+@media (min-width:768px) and (max-width:850px) {
+ .recipe {
+   .recipe__col__resp {
+     width: 50%!important;
+   }
+ .swiper {
+   height: 275px!important;
+   .swiper-slide {
+       height: 175px!important;
+   }
+ }
+ .button {
+   margin-bottom: 20px!important;
+  }
+ }
+ .recipe__font__h5 {
+   font-size: 17px!important;
+  }
+  .img__resp {
+   max-width: 125%!important;
+  }
+.recipe__icon__size {
+   font-size: 12px!important;
+}
+    
+}
+@media (min-width:850px) and (max-width:992px) {
+.recipe {
+ .recipe__col__resp {
+   width: 50%!important;
+ }
+ .bottom__line {
+   padding-top: 70px!important;
+ }
+.recipe__img {
+   width: 90%!important;
+   height: 80%!important;
+ }
+.swiper {
+ height: 275px!important;
+ .swiper-slide {
+     height: 175px!important;
+ }
+}
+.button {
+ margin-bottom: 20px!important;
+}
+}
+.recipe__font__h5 {
+ font-size: 17px!important;
+}
+.img__resp {
+ max-width: 125%!important;
+}
+.recipe__icon__size {
+ font-size: 12px!important;
+}
+  
+}
+
+@media (min-width:992px) and (max-width:1350px) {
+.recipe {
+margin-left: 5%!important;
+margin-right: 5%!important;
+
+.recipe__col__resp {
+ width: 50%!important;
+}
+
+.recipe__img {
+ width: 100%!important;
+}
+.swiper {
+height: 300px!important;
+.swiper-slide {
+   height: 200px!important;
+}
+}
+.button {
+margin-bottom: 20px!important;
+}
+.recipe__font__h4 {
+font-size: 20px!important;
+}
+.ratings i {
+font-size: 13px!important;
+}
+.recipe__font__p {
+font-size: 18px!important;
+}
+}
+.recipe__font__h5 {
+font-size: 18px!important;
+}
+.img__resp {
+max-width: 115%!important;
+}
+.recipe__icon__size {
+font-size: 13px!important;
+}
+}

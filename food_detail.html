@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Detail Page</title>
+    <link rel="stylesheet" href="Assets/css/index.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabriela">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kurale">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Upright">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great Vibes">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <nav class="navbar__responsive">
+    <div class="wrapper">
+      <div class="logo"><a href="#"><img src="/Images/navbar/nav-logo.png" alt="logo"/></a></div>
+      <input type="radio" name="slider" id="menu__btn">
+      <input type="radio" name="slider" id="close__btn">
+      <ul class="nav__links">
+        <label for="close__btn" class="btn close__btn"><i class="fas fa-times"></i></label>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#" class="desktop__item">Pages</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile__item">Pages</label>
+          <ul class="drop__menu">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="404_error.html">404 Page</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="forgotpassword.html">Forgot Password</a></li>
+            <li><a href="resetpassword.html">Reset Password</a></li>
+          </ul>
+        </li>
+        <li>
+            <a href="#" class="desktop__item">Shop</a>
+            <input type="checkbox" id="showDrop2">
+            <label for="showDrop2" class="mobile__item">Shop</label>
+            <ul class="drop__menu">
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="shop_cart.html">Shop Cart</a></li>
+              <li><a href="profile.html">My Account</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop__item">Recipe</a>
+            <input type="checkbox" id="showDrop3">
+            <label for="showDrop3" class="mobile__item">Recipe</label>
+            <ul class="drop__menu">
+              <li><a href="recipe.html">Recipe</a></li>
+              <li><a href="recipe_detail.html">Recipe Detail</a></li>
+            </ul>
+          </li>
+        <li>
+        <li><a href="food_detail.html">Food Deatil</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <label for="menu__btn" class="btn menu__btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+  <nav class="header">
+    <div class="navbar">
+      <img src="/Images/navbar/nav-logo.png" alt="logo"/>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__dropdown">
+          <a href="index.html">home</a>
+        </li>
+        <li class="navbar__menu__dropdown bottom__line">
+          <a href="/index.html">pages</a>
+          <ul class="second__menu">
+            <li class="second__menu__item">
+              <a href="/login.html"><span class="bottom__line">login</span></a>
+            </li>
+            <li class="second__menu__item">
+              <a href="/404_error.html"><span class="bottom__line">404 page</span> </a>
+            </li>
+            <li class="second__menu__item">
+              <a href="/register.html"><span class="bottom__line">register</span> </a>
+            </li>
+            <li class="second__menu__item">
+                <a href="/checkout.html"><span class="bottom__line">checkout</span> </a>
+              </li>
+              <li class="second__menu__item">
+                <a href="forgotpassword.html"><span class="bottom__line">forgot password</span> </a>
+              </li>
+              <li class="second__menu__item">
+                <a href="resetpassword.html"><span class="bottom__line">reset password</span> </a>
+              </li>
+          </ul>
+        </li>
+        <li class="navbar__menu__dropdown bottom__line">
+            <a href="/shop.html">Shop</a>
+            <ul class="second__menu">
+              <li class="second__menu__item">
+                <a href="/shop_cart.html"><span class="bottom__line">shop cart</span></a>
+              </li>
+              <li class="second__menu__item">
+                <a href="/profile.html"><span class="bottom__line">my account</span></a>
+              </li>
+            </ul>
+          </li>
+        <li class="navbar__menu__dropdown bottom__line">
+          <a href="/recipe.html">Recipe</a>
+          <ul class="second__menu">
+            <li class="second__menu__item">
+              <a href="recipe_detail.html"><span class="bottom__line">recipe detail</span></a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar__menu__dropdown bottom__line">
+          <a href="/food_detail.html">Food Detail</a>
+        </li>
+        <li class="navbar__menu__dropdown bottom__line">
+          <a href="contact.html">Contact</a>
+        </li>
+        <input id="search__input" type="search" placeholder="Search" class="me-3">
+        <a href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">3</span></a>
+      </ul>
+    </div>
+</nav>
+<div class="container__shopping__cart">
+  <div class="shopping__cart">
+    <div class="shopping__cart__header">
+      <i class="fa fa-shopping-cart cart__icon"></i><span class="badge">3</span>
+      <div class="shopping__cart__total">
+        <span>Total:</span>
+        <span>$87.97</span>
+      </div>
+    </div> 
+    <ul class="shopping__cart__items">
+      <li class="clearfix">
+        <img src="/Images/menu/food1.jpg" alt="item1" />
+        <span class="item__name">Steak...</span>
+        <span class="item__price">$9.99</span>
+        <span class="item__quantity">Quantity: 01</span>
+      </li>
+
+      <li class="clearfix">
+        <img src="/Images/menu/food6.jpg" alt="item1" />
+        <span class="item__name">Cizburger...</span>
+        <span class="item__price">$49.99</span>
+        <span class="item__quantity">Quantity: 01</span>
+      </li>
+
+      <li class="clearfix">
+        <img src="/Images/menu/food3.jpg" alt="item1" />
+        <span class="item__name">Hamburger...</span>
+        <span class="item__price">$29.99</span>
+        <span class="item__quantity">Quantity: 01</span>
+      </li>
+    </ul>
+    <div class="text-center mb-3">
+      <a href="https://twitter.com/Dave_Conner" class="button">Checkout</a>
+    </div>
+  </div> 
+</div>
+  <section class="header__page" style="background-image:linear-gradient(to bottom, rgba(26, 26, 26, 0.35) 0%, rgba(47, 47, 47, 0.35) 100%), url(/Images/login_images/2.jpg);">
+        <div class="container">
+            <div class="row reveal active">
+                <div class="col-md-12 text-center">
+                <h2 class="text-uppercase text-white header__page__font__h2">FOOD DETAIL</h2>
+                <p class="header__page__font__p">Tomato is a delicious restaurant website template</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="food__detail">
+            <div class="row reveal">
+                <div class="col-lg-6">
+                    <div class = "card-wrapper">
+                        <div class = "card">
+                          <div class = "product-imgs">
+                            <div class = "img-display">
+                              <div class = "img-showcase">
+                                <img src = "/Images/food_detail/6.jpg" alt = "shoe image" class="show__img__size">
+                                <img src = "/Images/food_detail/5.jpg" alt = "shoe image" class="show__img__size">
+                                <img src = "/Images/food_detail/15.jpg" alt = "shoe image" class="show__img__size">
+                              </div>
+                            </div>
+                            <div class = "img-select mt-4">
+                              <div class = "img-item">
+                                <a href = "#" data-id = "1">
+                                  <img src = "/Images/food_detail/6.jpg" alt = "shoe image" class="img__size">
+                                </a>
+                              </div>
+                              <div class = "img-item">
+                                <a href = "#" data-id = "2">
+                                  <img src = "/Images/food_detail/5.jpg" alt = "shoe image" class="img__size">
+                                </a>
+                              </div>
+                              <div class = "img-item">
+                                <a href = "#" data-id = "3">
+                                  <img src = "/Images/food_detail/15.jpg" alt = "shoe image" class="img__size">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-4">
+                    <h3>FOOD TITLE</h3>
+                    <hr>
+                    <div class="row display__inline__block">
+                    <div class="col-lg-6">
+                        <span class="span__font__detail">Price: $100</span>
+                        <small class="small__font__detail" style="text-decoration: line-through;">$150</small>
+                    </div>
+                    <div class="ratings col-lg-6">
+                        <div style="float: right;">
+                            <span class="me-1">3 reviews</span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-solid fa-star active icon__size"></i></span>
+                            <span><i class="fa-regular fa-star active icon__size"></i></span>
+                        </div>
+                    </div>
+                    </div>
+                    <hr>
+                    <p class="desc__font__detail">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                    <hr>
+                    <div class="category__tags__border me-3">
+                        <span class="category ms-2">Category: Main Dishes</span>
+                        <a href="checkout.html"><button class="food__detail__button btn__font" type="submit">ADD TO CART</button></a>
+                        <p class="category ms-2">Tags: Elegant, Men, Shirt, Clean</p>
+                    </div>
+                </div>
+                <main class="main">
+                    <div class="container">
+                      <div class="tab reveal">
+                        <div class="tab__menu">
+                          <button class="tab__menu__link" data-content="item__1">
+                            <span data-title="item__1">FOOD DESCRIPTION</span>
+                          </button>
+                          <button class="tab__menu__link is__active" data-content="item__2">
+                            <span data-title="item__2">REVIEW (20)</span>
+                          </button>
+                        </div>
+                        <div class="tab__bar">
+                          <div class="tab__bar__content" id="item__1">
+                            <div class="texts">
+                              <p class="paragraph">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.
+                              </p>
+                              <p class="mt-4 ms-5">
+                                <span class="paragraph"><i class="fa-solid fa-angle-right me-2 mb-3 icon__angle__clr" ></i> Curabitur a dui ut sem pulvinar accumsan a nec quam.</span><br>
+                                <span class="paragraph"><i class="fa-solid fa-angle-right me-2 mb-3 icon__angle__clr"></i> Pellentesque euismod turpis eu ante euismod, nec molestie mi ullamcorper.</span><br>
+                                <span class="paragraph"><i class="fa-solid fa-angle-right me-2 mb-3 icon__angle__clr"></i> Mauris tristique ante a purus dignissim, eu efficitur libero congue.</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="tab__bar__content is__active" id="item__2">
+                            <div class="texts">
+                              <h4 class="mb-4">3 Reviews for Food</h4>
+                              <ul class="paragraph">
+                                <li class="user__reviews">
+                                  <div class="user__detail">
+                                    <i class="fa-solid fa-user me-2"></i>
+                                    <span>Jonh Doe</span>
+                                    <span><sup style="font-size: 13.5px;">Feb 17, 2015, at 11:34</sup></span>
+                                  </div>
+                                  <div class="ratings">
+                                    <span><i class="fa-solid fa-star active icon__size"></i></span>
+                                    <span><i class="fa-solid fa-star active icon__size"></i></span>
+                                    <span><i class="fa-solid fa-star active icon__size"></i></span>
+                                    <span><i class="fa-solid fa-star active icon__size"></i></span>
+                                    <span><i class="fa-regular fa-star active icon__size"></i></span>
+                                  </div>
+                                    <p class="paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor sit amet urna nec tempor. Nullam pellentesque in orci in luctus. Sed convallis tempor tellus a faucibus. Suspendisse et quam eu velit commodo tempus.
+                                    </p>
+                                </li>
+                                <li class="mt-4 user__reviews">
+                                  <div class="user__detail ">
+                                    <i class="fa-solid fa-user me-2"></i>
+                                    <span>Jonh Doe</span>
+                                    <span><sup style="font-size: 13.5px;">Feb 17, 2015, at 11:34</sup></span>
+                                  </div>
+                                  <div class="ratings">
+                                    <span><i class="fa-solid fa-star active icon__size"></i></span>
+                                    <span><i class="fa-solid fa-star active icon__size"></i></span>
+                                    <span><i class="fa-solid fa-star active icon__size"></i></span>
+                                    <span><i class="fa-solid fa-star active icon__size"></i></span>
+                                    <span><i class="fa-regular fa-star active icon__size"></i></span>
+                                  </div>
+                                    <p class="paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor sit amet urna nec tempor. Nullam pellentesque in orci in luctus. Sed convallis tempor tellus a faucibus. Suspendisse et quam eu velit commodo tempus.
+                                    </p>
+                                </li>
+                                <li class="mt-4 user__reviews">
+                                  <div class="user__detail ">
+                                    <i class="fa-solid fa-user me-2"></i>
+                                    <span>Jonh Doe</span>
+                                    <span><sup style="font-size: 13.5px;">Feb 17, 2015, at 11:34</sup></span>
+                                  </div>
+                                  <div class="ratings">
+                                    <span><i class="fa-solid fa-star active icon__size"></i></span>
+                                    <span><i class="fa-solid fa-star active icon__size"></i></span>
+                                    <span><i class="fa-solid fa-star active icon__size"></i></span>
+                                    <span><i class="fa-solid fa-star active icon__size"></i></span>
+                                    <span><i class="fa-regular fa-star active icon__size"></i></span>
+                                  </div>
+                                    <p class="paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor sit amet urna nec tempor. Nullam pellentesque in orci in luctus. Sed convallis tempor tellus a faucibus. Suspendisse et quam eu velit commodo tempus.
+                                    </p>
+                                </li>
+                                <div class="mt-4 text-center">
+                                  <button class="button load__more" type="submit">LOAD MORE</button>
+                              </div> 
+                              </ul>
+                              <h4 class="ms-4 mt-5">ADD A REVIEW</h4>
+                              <form class="food__form">
+                                <div class="row">
+                                  <span class="food__label__font">Your Ratings</span>
+                                  <div class="review__ratings">
+                                    <span><i class="rating__star fa-regular fa-star icon__size"></i></span>
+                                    <span><i class="rating__star fa-regular fa-star icon__size"></i></span>
+                                    <span><i class="rating__star fa-regular fa-star icon__size"></i></span>
+                                    <span><i class="rating__star fa-regular fa-star icon__size"></i></span>
+                                    <span><i class="rating__star fa-regular fa-star icon__size"></i></span>
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <label class="food__label__font mb-2 comment__display__block">Comment</label>
+                                    <textarea cols="115" rows="10" placeholder="Add Comment.."
+                                      class="textarea__background__color"></textarea>
+                                      <div class="mt-3">
+                                        <a href="checkout.html"><button class="review__button btn__font__review" type="submit">SUBMIT REVIEW</button></a>
+                                        </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </main>
+                <hr class="page___line">
+                <h2 class="text-center reveal"><strong>May You Like Also</strong></h2>
+                <span class="slide__font__span text-center reveal">Products</span>
+                <div class="swiper reveal">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="food_detail.html"><img src="Images/food_detail/2.jpg" class="related__img"></a>
+                        <p class="mt-4 text-center"><a href="" class="text__decor__none">FOOD NAME</a></p>
+                        <div class="related__food__ratings">
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-regular fa-star active icon__size"></i></span>
+                        </div>
+                        <div class="price">
+                            <span>$100</span>
+                        </div>
+                        <div class="text-center borders">
+                        <a href="https://twitter.com/Dave_Conner" class="btn btn__cart text__display__none"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div> 
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="food_detail.html"><img src="Images/food_detail/3.jpg" class="related__img"></a>
+                        <p class="mt-4 text-center"><a href="" class="text__decor__none">FOOD NAME</a></p>
+                        <div class="related__food__ratings">
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-regular fa-star active icon__size"></i></span>
+                        </div>
+                        <div class="price">
+                            <span>$100</span>
+                        </div>
+                        <div class="text-center borders">
+                        <a href="https://twitter.com/Dave_Conner" class="btn btn__cart text__display__none"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div> 
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="food_detail.html"><img src="Images/food_detail/5.jpg" class="related__img"></a>
+                        <p class="mt-4 text-center"><a href="" class="text__decor__none">FOOD NAME</a></p>
+                        <div class="related__food__ratings">
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-regular fa-star active icon__size"></i></span>
+                        </div>
+                        <div class="price">
+                            <span>$100</span>
+                        </div>
+                        <div class="text-center borders">
+                        <a href="https://twitter.com/Dave_Conner" class="btn btn__cart text__display__none"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div> 
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="food_detail.html"><img src="Images/food_detail/6.jpg" class="related__img"></a>
+                        <p class="mt-4 text-center"><a href="" class="text__decor__none">FOOD NAME</a></p>
+                        <div class="related__food__ratings">
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-solid fa-star active icon__size"></i></span>
+                          <span><i class="fa-regular fa-star active icon__size"></i></span>
+                        </div>
+                        <div class="price">
+                        <span>$100</span>
+                        </div>
+                        <div class="text-center borders">
+                        <a href="https://twitter.com/Dave_Conner" class="btn btn__cart text__display__none"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                        </div> 
+                      </div>
+                  </div>
+                  <div class="pagination"></div>
+                </div>
+            </div>
+    </section>
+    <footer class="footer" id="footer__img__fixed">
+      <div class="container__footer">
+          <div class="row reveal">
+              <div class="col-lg-4 padding__right__left w__50__resp">
+                  <h2 class="footer__h2 mb-4"><span class="span__color">Our</span> Location</h2>
+                  <div clas="footer__content">
+                  <ul>
+                      <li><span>Head Office:</span> 1422 Makram St. Santa Rosa,t CA 94559. Texas, USA</li>
+                      <li><span>Call for Reservations:</span> +1 - 123456789 - 245789789</li>
+                      <li><span>E-mail:</span> information@deliciousa.com</li>
+                  </ul>
+                  <div class="social__media">
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 padding__right__left w__50__resp"> 
+                  <h2 class="footer__h2 mb-4"><span class="span__color">Opening</span> Times</h2>
+                  <div clas="footer__content">
+                  <ul>
+                      <li>Monday <span class="right__side">1 pm - 10 pm</span></li>
+                      <li>Tuesday <span class="right__side">1 pm - 10 pm</span></li>
+                      <li>Wednesday <span class="right__side">1 pm - 10 pm</span></li>
+                      <li>Thursday <span class="right__side">1 pm - 10 pm</span></li>
+                      <li>Friday <span class="right__side">1 pm - 10 pm</span></li>
+                      <li>Saturday <span class="right__side">1 pm - Midnight</span></li>
+                      <li>Sunday <span class="right__side">1 pm - Midnight</span></li>
+                  </ul>
+                  </div>
+              </div>
+              <div class="col-lg-4 padding__right__left align__center__resp">
+                  <h2 class="footer__h2 mb-4"><span class="span__color">Instagram</span> Gallery</h2>
+                  <div clas="row">
+                      <div class="col-lg-12 mb-2">
+                          <a href=""><img src="/Images/footer/img1.jpg"></a>
+                          <a href=""><img src="/Images/footer/img2.jpg"></a>
+                          <a href=""><img src="/Images/footer/img3.jpg"></a>
+                          <a href=""><img src="/Images/footer/img4.jpg"></a>
+                      </div>
+                      <div class="col-lg-12">
+                          <a href=""><img src="/Images/footer/img5.jpg"></a>
+                          <a href=""><img src="/Images/footer/img6.jpg"></a>
+                          <a href=""><img src="/Images/footer/img7.jpg"></a>
+                          <a href=""><img src="/Images/footer/img8.jpg"></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer__copyrights">
+          <div class="container__copyrights">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <p class="footer__p"><i class="fa-solid fa-copyright icon__detail"></i>2015.Tomato.All rights reserved. Designed with<i class="fa-solid fa-heart icon__detail"></i>by Surjithctly</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>  
+  <div class="up__button">
+    <a href="#" class="up__button__icon">
+        <i class="fa-sharp fa-solid fa-angles-up"></i>
+    </a>
+  </div>    
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script src="Assets/js/download.js"></script>
+    <script src="Assets/js/recipe_carousel.js"></script>
+    <script src="Assets/js/scroll__button.js"></script>
+    <script src="/Assets/js/food_detail.js"></script>
+    
+   
+</body>
+</html>

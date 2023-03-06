@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Assets/css/index.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabriela">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kurale">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Upright">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <nav class="navbar__responsive">
+    <div class="wrapper">
+      <div class="logo"><a href="#"><img src="/Images/navbar/nav-logo.png" alt="logo"/></a></div>
+      <input type="radio" name="slider" id="menu__btn">
+      <input type="radio" name="slider" id="close__btn">
+      <ul class="nav__links">
+        <label for="close__btn" class="btn close__btn"><i class="fas fa-times"></i></label>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#" class="desktop__item">Pages</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile__item">Pages</label>
+          <ul class="drop__menu">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="404_error.html">404 Page</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="forgotpassword.html">Forgot Password</a></li>
+            <li><a href="resetpassword.html">Reset Password</a></li>
+          </ul>
+        </li>
+        <li>
+            <a href="#" class="desktop__item">Shop</a>
+            <input type="checkbox" id="showDrop2">
+            <label for="showDrop2" class="mobile__item">Shop</label>
+            <ul class="drop__menu">
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="shop_cart.html">Shop Cart</a></li>
+              <li><a href="profile.html">My Account</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop__item">Recipe</a>
+            <input type="checkbox" id="showDrop3">
+            <label for="showDrop3" class="mobile__item">Recipe</label>
+            <ul class="drop__menu">
+              <li><a href="recipe.html">Recipe</a></li>
+              <li><a href="recipe_detail.html">Recipe Detail</a></li>
+            </ul>
+          </li>
+        <li>
+        <li><a href="food_detail.html">Food Deatil</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <label for="menu__btn" class="btn menu__btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+    <nav class="header">
+        <div class="navbar">
+          <img src="/Images/navbar/nav-logo.png" alt="logo"/>
+          <ul class="navbar__menu">
+            <li class="navbar__menu__dropdown">
+              <a href="index.html">home</a>
+            </li>
+            <li class="navbar__menu__dropdown bottom__line">
+              <a href="/index.html">pages</a>
+              <ul class="second__menu">
+                <li class="second__menu__item">
+                  <a href="/login.html"><span class="bottom__line">login</span></a>
+                </li>
+                <li class="second__menu__item">
+                  <a href="/404_error.html"><span class="bottom__line">404 page</span> </a>
+                </li>
+                <li class="second__menu__item">
+                  <a href="/register.html"><span class="bottom__line">register</span> </a>
+                </li>
+                <li class="second__menu__item">
+                    <a href="/checkout.html"><span class="bottom__line">checkout</span> </a>
+                  </li>
+                  <li class="second__menu__item">
+                    <a href="forgotpassword.html"><span class="bottom__line">forgot password</span> </a>
+                  </li>
+                  <li class="second__menu__item">
+                    <a href="resetpassword.html"><span class="bottom__line">reset password</span> </a>
+                  </li>
+              </ul>
+            </li>
+            <li class="navbar__menu__dropdown bottom__line">
+                <a href="/shop.html">Shop</a>
+                <ul class="second__menu">
+                  <li class="second__menu__item">
+                    <a href="/shop_cart.html"><span class="bottom__line">shop cart</span></a>
+                  </li>
+                  <li class="second__menu__item">
+                    <a href="/profile.html"><span class="bottom__line">my account</span></a>
+                  </li>
+                </ul>
+              </li>
+            <li class="navbar__menu__dropdown bottom__line">
+              <a href="/recipe.html">Recipe</a>
+              <ul class="second__menu">
+                <li class="second__menu__item">
+                  <a href="recipe_detail.html"><span class="bottom__line">recipe detail</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__menu__dropdown bottom__line">
+              <a href="/food_detail.html">Food Detail</a>
+            </li>
+            <li class="navbar__menu__dropdown bottom__line">
+              <a href="contact.html">Contact</a>
+            </li>
+            <input id="search__input" type="search" placeholder="Search" class="me-3">
+            <a href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">3</span></a>
+          </ul>
+        </div>
+    </nav>
+    <div class="container__shopping__cart">
+        <div class="shopping__cart">
+          <div class="shopping__cart__header">
+            <i class="fa fa-shopping-cart cart__icon"></i><span class="badge">3</span>
+            <div class="shopping__cart__total">
+              <span>Total:</span>
+              <span>$87.97</span>
+            </div>
+          </div> 
+          <ul class="shopping__cart__items">
+            <li class="clearfix">
+              <img src="/Images/menu/food1.jpg" alt="item1" />
+              <span class="item__name">Steak...</span>
+              <span class="item__price">$9.99</span>
+              <span class="item__quantity">Quantity: 01</span>
+            </li>
+      
+            <li class="clearfix">
+              <img src="/Images/menu/food6.jpg" alt="item1" />
+              <span class="item__name">Cizburger...</span>
+              <span class="item__price">$49.99</span>
+              <span class="item__quantity">Quantity: 01</span>
+            </li>
+      
+            <li class="clearfix">
+              <img src="/Images/menu/food3.jpg" alt="item1" />
+              <span class="item__name">Hamburger...</span>
+              <span class="item__price">$29.99</span>
+              <span class="item__quantity">Quantity: 01</span>
+            </li>
+          </ul>
+          <div class="text-center mb-3">
+            <a href="https://twitter.com/Dave_Conner" class="button">Checkout</a>
+          </div>
+        </div> 
+      </div> 
+    <section class="header__page" style="background-image:linear-gradient(to bottom, rgba(26, 26, 26, 0.35) 0%, rgba(47, 47, 47, 0.35) 100%), url(/Images/login_images/Hamburger-sandwich-fast-food_3840x2160.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                <h2 class="text-uppercase text-white header__page__font__h2">LOGIN</h2>
+                <p class="header__page__font__p">Please login or sign in to continue with your purchase</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="account">
+        <div class="container__account">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="text-center font__h3 mb-4">EXISTING CUSTOMER</h3>
+                        <form class="account__form">
+                                <div class="col-md-12 col-12">
+                                    <label class="account__label__font mb-2">Enter your username</label>
+                                    <input type="text" class="form-control mb-3 form__background__color">
+                                </div>
+                                <div class="col-lg-12">
+                                    <label class="account__label__font mb-2">Enter your password</label>
+                                    <input type="text" class="form-control mb-4 form__background__color">
+                                </div>
+                                <div class="mb-3 ms-2">
+                                <button class="button btn__font login__btn__resp" type="submit">LOGIN</button>
+                                <a href="forgotpassword.html" class="text__decor__a forgotpassword__responsive"><small>(FORGOTTEN YOUR PASSWORD?)</small></a>
+                                </div>
+                        </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <h3 class="text-center font__h3 mb-4 margin__top__h3">DON'T HAVE AN ACCOUNT?</h3>
+                        <p class="account__font__p mt-5">
+                            Add items to your wishlistget personalised recommendations <br>
+                            check out more quickly track your orders register
+                        </p>
+                        <div>
+                            <a href="register.html"><img src="/Images/login_images/6088121.png" alt="Create Account" class="account__img mt-4" title="Create New Account"></a> 
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <footer class="footer" id="footer__img__fixed">
+      <div class="container__footer">
+          <div class="row">
+              <div class="col-lg-4 padding__right__left w__50__resp">
+                  <h2 class="footer__h2 mb-4"><span class="span__color">Our</span> Location</h2>
+                  <div clas="footer__content">
+                  <ul>
+                      <li><span>Head Office:</span> 1422 Makram St. Santa Rosa,t CA 94559. Texas, USA</li>
+                      <li><span>Call for Reservations:</span> +1 - 123456789 - 245789789</li>
+                      <li><span>E-mail:</span> information@deliciousa.com</li>
+                  </ul>
+                  <div class="social__media">
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 padding__right__left w__50__resp"> 
+                  <h2 class="footer__h2 mb-4"><span class="span__color">Opening</span> Times</h2>
+                  <div clas="footer__content">
+                  <ul>
+                      <li>Monday <span class="right__side">1 pm - 10 pm</span></li>
+                      <li>Tuesday <span class="right__side">1 pm - 10 pm</span></li>
+                      <li>Wednesday <span class="right__side">1 pm - 10 pm</span></li>
+                      <li>Thursday <span class="right__side">1 pm - 10 pm</span></li>
+                      <li>Friday <span class="right__side">1 pm - 10 pm</span></li>
+                      <li>Saturday <span class="right__side">1 pm - Midnight</span></li>
+                      <li>Sunday <span class="right__side">1 pm - Midnight</span></li>
+                  </ul>
+                  </div>
+              </div>
+              <div class="col-lg-4 padding__right__left align__center__resp">
+                  <h2 class="footer__h2 mb-4"><span class="span__color">Instagram</span> Gallery</h2>
+                  <div clas="row">
+                      <div class="col-lg-12 mb-2">
+                          <a href=""><img src="/Images/footer/img1.jpg"></a>
+                          <a href=""><img src="/Images/footer/img2.jpg"></a>
+                          <a href=""><img src="/Images/footer/img3.jpg"></a>
+                          <a href=""><img src="/Images/footer/img4.jpg"></a>
+                      </div>
+                      <div class="col-lg-12">
+                          <a href=""><img src="/Images/footer/img5.jpg"></a>
+                          <a href=""><img src="/Images/footer/img6.jpg"></a>
+                          <a href=""><img src="/Images/footer/img7.jpg"></a>
+                          <a href=""><img src="/Images/footer/img8.jpg"></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer__copyrights">
+          <div class="container__copyrights">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <p class="footer__p"><i class="fa-solid fa-copyright icon__detail"></i>2015.Tomato.All rights reserved. Designed with<i class="fa-solid fa-heart icon__detail"></i>by Surjithctly</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <div class="up__button">
+    <a href="#" class="up__button__icon">
+        <i class="fa-sharp fa-solid fa-angles-up"></i>
+    </a>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script src="Assets/js/download.js"></script>
+    <script src="Assets/js/scroll__button.js"></script>
+</body>
+</html>

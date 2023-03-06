@@ -1,0 +1,424 @@
+@import "./_variables.scss";
+@import "./_mixin.scss";
+
+.menu {
+@include container__pages();
+position: relative;
+.brush__dec {
+  @include brush__dec();
+}
+.menu__h2 {
+    font-weight: 700;
+    color: $color__dark__gray;
+    font-family: $font__family__kurale;
+}
+.pages__header {
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pages__header::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 3px;
+    width: 113px;
+    background-color: $color__yellow;
+    margin: 0 auto;
+}
+.menu__p {
+    color: $color__dark__gray;
+    font-family: $font__family__cormorant;
+    font-size: 23px;
+    font-weight: 600;
+}
+.tabs__stylish {
+    max-width: auto;
+    float: none;
+    list-style: none;
+    padding: 0;
+    margin: 75px auto;
+   border-bottom: 4px solid $background__color__red;
+}
+.tabs__stylish:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.tabs__stylish input[type=radio] {
+    display:none;
+}
+.tabs__stylish label {
+    display: block;
+    float: left;
+    width: 16.6%;
+    color: $color__dark__gray;
+    font-size: 21px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+    box-shadow: inset 0 4px $background__color__red;
+    border-bottom: 4px solid $background__color__red;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.tabs__stylish label i {
+    padding: 5px;
+    margin-right: 0;
+}
+.tabs__stylish label:hover {
+    background: $background__color__white;
+    box-shadow: inset 0 4px $background__color__yellow;
+    border-bottom: 4px solid $background__color__yellow;
+    color: $background__color__yellow;
+}
+.tab__content {
+    display: none;
+    width: 100%;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: $background__color__white;
+ min-height: 250px;
+ margin-top: 36px;
+}
+
+.tab__content * {
+    -webkit-animation: scale 0.7s ease-in-out;
+    -moz-animation: scale 0.7s ease-in-out;
+    animation: scale 0.7s ease-in-out;
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+    }
+  50% {
+    transform: scale(1.01);
+    opacity: 0.5;
+    }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.tabs__stylish [id^="tab"]:checked + label {
+    background: $background__color__white;
+    box-shadow: inset 0 4px $background__color__yellow;
+    border-bottom: 4px solid $background__color__yellow;
+    color: $background__color__yellow;
+}
+#tab1:checked ~ #tab__content1,
+#tab2:checked ~ #tab__content2,
+#tab3:checked ~ #tab__content3,
+#tab4:checked ~ #tab__content4,
+#tab5:checked ~ #tab__content5,
+#tab6:checked ~ #tab__content6 {
+    display: block;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    font-family: $font__family__cormorant;
+    color: $color__dark__gray;
+    font-weight: 600;
+    padding: 0.35rem 0.75rem;
+    border-radius: 0.5rem;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border: none;
+      width: 100%;
+      height: 100%;
+      background-color: $background__color__yellow;
+      border-radius: 0.5rem;
+      z-index: -2;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border: none;
+      width: 0%;
+      height: 100%;
+      background-color:$background__color__red;
+      transition: all 0.3s;
+      border-radius: 0.5rem;
+      z-index: -1;
+    }
+    &:hover {
+      color: $color__white;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+  
+  .pdf__download {
+    border:2px solid $background__color__yellow;
+    background:transparent;
+    color: $background__color__yellow;
+    text-transform:uppercase;
+    font-size:0.8em;
+    padding:0px 20px 0px 20px;
+    transition: 0.5s;
+  }
+  .pdf__download a {
+    text-decoration:none;
+    color: $background__color__yellow;
+    transition: 0.5s;
+    font-family:arial;
+    font-weight:bold;
+  }
+
+  .pdf__download a:hover {
+    color:$color__white;
+    transition: 0.5s;
+  }
+  .pdf__download:hover a
+  {
+    color:$color__white;
+    transition: 0.5s;
+  }
+  .pdf__download:hover
+  {
+    background:$background__color__yellow;
+    color:$color__white;
+    transition: 0.5s;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  .button__p {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  
+  .pdf__download img
+  {
+    margin:0px 10px 0px 0px;
+    padding: 0px;
+    height: 20px;
+  }
+.font__detail {
+    font-size: 20px;
+    font-weight: 700;
+    color: $color__dark__gray;
+    font-family: $font__family__kurale;
+}
+.menu__icon {
+    display: block;
+    margin-top: 10px;
+    font-size: 32px;
+}
+.display__flex {
+    display: flex;
+}
+.item__header{
+    position: relative;
+    z-index: 1;
+    margin-top: 6px;
+    margin-left: 15px;
+   display: inline-table;
+}
+
+.price {
+    float: right;
+    padding-left: 10px;
+    line-height: 19.8px;
+    margin: 2px 0;
+    background: #fff none repeat scroll 0% 0%;
+    font-family: $font__family__cormorant;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 100px;
+}
+
+.dotted__bg {
+    border-top: dotted 2px #ccc;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 100%;
+    z-index: -1;
+}
+.tab__menu__p {
+    color: $color__light__gray;
+    font-family: $font__family__cormorant;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.menu__img {
+    height: 100px;
+}
+
+h5 {
+    font-weight: 700;
+    color: $color__dark__gray;
+    font-family: $font__family__kurale;
+    padding-right: 10px;
+    display: inline;
+    background: $background__color__white;
+}
+
+@media (min-width: 768px) {
+  .tabs__stylish i {
+      padding: 5px;
+      margin-right: 10px;
+  }
+  .tabs__stylish label span {
+      display: inline-block;
+  }
+  .tabs__stylish {
+  margin: 50px auto;
+  }
+}
+
+}
+
+@media (max-width:576px) {
+  .menu {
+    .menu__icon {
+      font-size: 20px;
+    }
+    .font__detail {
+      font-size: 10px;
+    }
+    .menu__img {
+      width: 50px;
+      height: 50px;
+    }
+    .price {
+      font-size: 16px;
+      padding-left: 0;
+      margin-left: 0;
+    }
+    h5 {
+      font-size: 16px;
+    }
+    .tab__menu__p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+  .menu {
+    .menu__icon {
+      font-size: 24px;
+    }
+    .font__detail {
+      font-size: 15px;
+    }
+    
+    .price {
+      font-size: 20px;
+      padding-left: 0;
+      margin-left: 0;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    .tab__menu__p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+  .menu {
+    margin-left: 8%;
+    margin-right: 8%;
+    .menu__icon {
+      font-size: 28px;
+    }
+    .font__detail {
+      font-size: 18px;
+    }
+
+    .menu__img {
+      width: 70px;
+      height: 70px;
+    }
+    .price {
+      font-size: 17px;
+      padding-left: 0;
+      margin-left: 0;
+    }
+    h5 {
+      font-size: 17px;
+    }
+    .tab__menu__p {
+      font-size: 17px;
+    }
+    .col-lg-6 {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width:992px) and (max-width:1345px) {
+  .menu {
+    margin-left: 10%;
+    margin-right: 10%;
+    .menu__icon {
+      font-size: 32px;
+    }
+    .font__detail {
+      font-size: 20px;
+    }
+
+    .menu__img {
+      width: 85px;
+      height: 85px;
+    }
+    .price {
+      font-size: 20px;
+      padding-left: 0;
+      margin-left: 0;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    .tab__menu__p {
+      font-size: 20px;
+    }
+   
+  }
+}
+
