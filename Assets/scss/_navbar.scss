@@ -1,6 +1,14 @@
 @import "./_variables.scss";
 @import "./_mixin.scss";
 
+#cart {
+  transition: 0.35s;
+  cursor: pointer;
+  &:hover {
+    color: $background__color__yellow;
+  }
+}
+
 .header {
     background: rgba(0, 0, 0, 0.7);
     position: fixed;
@@ -143,8 +151,8 @@
 
 .container__shopping__cart {
     margin: auto;
-    top: 9%;
-    right: 8%;
+    top: 92%;
+    right: 0%;
     position: absolute;
     z-index: 98;
   }
@@ -184,7 +192,30 @@
       }
     }
     
+    .scrollbar__cart {
+      margin-top: 10px;
+      height: 280px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      &::-webkit-scrollbar {
+        width: 10px;
+    }
+  
+    &::-webkit-scrollbar-track {
+        background: rgba(43, 43, 43, 0.7);
+    }
+  
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: $background__color__yellow;
+        transition: 0.35s;
+    }
+  }
+
+  
+
     .shopping__cart__items {
+      margin-bottom: 1.6rem;
       padding-left: 0;
       padding-top: 20px;
   
@@ -193,6 +224,7 @@
         }
       
       img {
+        border-radius: 50%;
         width: 75px;
         height: 75px;
         float: left;

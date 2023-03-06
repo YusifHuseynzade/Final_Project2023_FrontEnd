@@ -1,7 +1,7 @@
 //  LOAD MORE FUNCTION
 
 $(document).ready(function(){
-    $(".load").slice(0, 2).show();
+    $(".load").slice(0, 4).show();
     $(".load__more").on("click", function(e){
       e.preventDefault();
       $(".load:hidden").slice(0, 2).slideDown();

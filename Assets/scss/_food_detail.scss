@@ -4,7 +4,10 @@
 .food__detail {
   @include container__pages();
     
-  
+    .comment__display__block {
+      display: block;
+    }
+
     .review__button {
       display: block;
       color: $color__dark__gray;
@@ -551,13 +554,14 @@ body {
     font-size: 0!important;
   }
   .swiper {
-    height: 350px!important;
+    height: 360px!important;
     text-align: -webkit-center!important;
   p {
       margin-top: 0.5rem!important;
      }
  .swiper-slide {
-        height: 250px!important;
+        width: 250px !important;
+        height: 290px !important;
     }
   }
   .fa-solid, .fas {
@@ -567,7 +571,7 @@ body {
     font-size: 15px!important;
    }
    .related__img {
-    width: 100px!important;
+    width: 250px!important;
    }
   
    .related__food__ratings .icon__size {
@@ -583,99 +587,128 @@ body {
 }
 
 @media (min-width:576px) and (max-width:768px) {
-  .food__detail {
-  margin-left: 5%!important;
-  margin-right: 5%!important;
-  .img__size {
-    width: 100%;
-  }
-  .card {
-    margin-bottom: 20px;
-  }
-  .display__inline__block {
-    display: inline-block!important;
-  }
-  .text__display__none {
-    font-size: 0!important;
+    .food__detail {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+
+        .img__size {
+            width: 100%;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .display__inline__block {
+            display: inline-block !important;
+        }
+
+        .text__display__none {
+            font-size: 0 !important;
+        }
+
+        .img-select {
+            justify-content: center;
+        }
+
+        .swiper {
+            height: 360px !important;
+            text-align: -webkit-center !important;
+
+            p {
+                margin-top: 0.5rem !important;
+            }
+
+            .swiper-slide {
+                width: 250px !important;
+                height: 290px !important;
+            }
+        }
+
+        .fa-solid, .fas {
+            font-size: 15px !important;
+        }
+
+        .text__decor__none {
+            font-size: 15px !important;
+        }
+
+        .related__img {
+            width: 250px !important;
+        }
+
+        .related__food__ratings {
+            margin: 0 !important;
+        }
+
+        .price {
+            margin: 6px 0 5px !important;
+        }
+
+        .related__food__ratings .icon__size {
+            font-size: 10px !important;
+        }
     }
-  .img-select {
-    justify-content: center;
-    }
-  .swiper {
-    height: 350px!important;
-    text-align: -webkit-center!important;
-   p {
-      margin-top: 0.5rem!important;
-     }
-   .swiper-slide {
-        height: 250px!important;
-    }
-  }
-   .fa-solid, .fas {
-    font-size: 15px!important;
-  }
-  .text__decor__none {
-    font-size: 15px!important;
-   }
-   .related__img {
-    width: 140px!important;
-   }
-   .related__food__ratings {
-    margin: 0!important;
-   }
-   .price {
-    margin: 6px 0 5px!important;
-   }
-   .related__food__ratings .icon__size {
-    font-size: 10px!important;
-   }
-}
 }
 @media (min-width:768px) and (max-width:992px) {
-  .food__detail {
-  margin-left: 10%!important;
-  margin-right: 10%!important;
-  .card {
-    margin-bottom: 20px;
-  }
-  .display__inline__block {
-    display: inline-block!important;
-  }
-  .text__display__none {
-    font-size: 0!important;
+    .food__detail {
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .display__inline__block {
+            display: inline-block !important;
+        }
+
+        .text__display__none {
+            font-size: 0 !important;
+        }
+
+        .img-select {
+            justify-content: center;
+        }
+
+        .swiper {
+            height: 360px !important;
+            text-align: -webkit-center !important;
+
+            p {
+                margin-top: 0.5rem !important;
+            }
+
+            .swiper-slide {
+                width: 250px !important;
+                height: 290px !important;
+            }
+        }
+
+        .fa-solid, .fas {
+            font-size: 16px !important;
+        }
+
+        .text__decor__none {
+            font-size: 16px !important;
+        }
+
+        .related__img {
+            width: 250px !important;
+        }
+
+        .related__food__ratings {
+            margin: 0 !important;
+        }
+
+        .price {
+            margin: 6px 0 5px !important;
+        }
+
+        .related__food__ratings .icon__size {
+            font-size: 12px !important;
+        }
     }
-  .img-select {
-    justify-content: center;
-    }
-  .swiper {
-    height: 350px!important;
-    text-align: -webkit-center!important;
-  p {
-      margin-top: 0.5rem!important;
-     }
-  .swiper-slide {
-        height: 250px!important;
-    }
-  }
-  .fa-solid, .fas {
-    font-size: 16px!important;
-  }
-  .text__decor__none {
-    font-size: 16px!important;
-   }
-   .related__img {
-    width: 165px!important;
-   }
-   .related__food__ratings {
-    margin: 0!important;
-   }
-   .price {
-    margin: 6px 0 5px!important;
-   }
-   .related__food__ratings .icon__size {
-    font-size: 12px!important;
-   }
-}
 }
 
 @media (min-width:992px) and (max-width:1200px) {
@@ -692,13 +725,13 @@ body {
     justify-content: center;
     }
   .swiper {
-    height: 350px!important;
+    height: 360px!important;
     text-align: -webkit-center!important;
   p {
       margin-top: 0.5rem!important;
      }
   .swiper-slide {
-        height: 250px!important;
+        height: 285px!important;
     }
   }
    .related__img {
@@ -727,17 +760,17 @@ body {
     justify-content: center;
     }
   .swiper {
-    height: 350px!important;
+    height: 360px!important;
     text-align: -webkit-center!important;
   p {
       margin-top: 0.5rem!important;
      }
   .swiper-slide {
-        height: 250px!important;
+        height: 285px!important;
     }
   }
    .related__img {
-    width: 180px!important;
+    width: 225px!important;
    }
    .related__food__ratings {
     margin: 0!important;

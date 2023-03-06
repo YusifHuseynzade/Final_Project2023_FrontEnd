@@ -1348,16 +1348,17 @@
     height: 250px !important;
   }
   .recipe .swiper .swiper-slide {
-    height: 125px !important;
+    width: 150px !important;
+    height: 150px !important;
   }
   .recipe .button {
     margin-bottom: 20px !important;
   }
+  .recipe .img__resp {
+    max-width: 110% !important;
+  }
   .recipe__font__h5 {
     font-size: 15px !important;
-  }
-  .img__resp {
-    max-width: 150% !important;
   }
   .recipe__icon__size {
     font-size: 8px !important;
@@ -1372,19 +1373,20 @@
     margin-bottom: 10px !important;
   }
   .recipe .swiper {
-    height: 250px !important;
+    height: 260px !important;
   }
   .recipe .swiper .swiper-slide {
-    height: 150px !important;
+    width: 175px !important;
+    height: 185px !important;
   }
   .recipe .button {
     margin-bottom: 20px !important;
   }
+  .recipe .img__resp {
+    max-width: 110% !important;
+  }
   .recipe__font__h5 {
     font-size: 16px !important;
-  }
-  .img__resp {
-    max-width: 125% !important;
   }
   .recipe__icon__size {
     font-size: 10px !important;
@@ -1398,16 +1400,17 @@
     height: 275px !important;
   }
   .recipe .swiper .swiper-slide {
-    height: 175px !important;
+    width: 175px !important;
+    height: 200px !important;
   }
   .recipe .button {
     margin-bottom: 20px !important;
   }
+  .recipe .img__resp {
+    max-width: 110% !important;
+  }
   .recipe__font__h5 {
     font-size: 17px !important;
-  }
-  .img__resp {
-    max-width: 125% !important;
   }
   .recipe__icon__size {
     font-size: 12px !important;
@@ -1425,19 +1428,20 @@
     height: 80% !important;
   }
   .recipe .swiper {
-    height: 275px !important;
+    height: 285px !important;
   }
   .recipe .swiper .swiper-slide {
-    height: 175px !important;
+    width: 175px !important;
+    height: 190px !important;
   }
   .recipe .button {
     margin-bottom: 20px !important;
   }
+  .recipe .img__resp {
+    max-width: 110% !important;
+  }
   .recipe__font__h5 {
     font-size: 17px !important;
-  }
-  .img__resp {
-    max-width: 125% !important;
   }
   .recipe__icon__size {
     font-size: 12px !important;
@@ -1455,10 +1459,10 @@
     width: 100% !important;
   }
   .recipe .swiper {
-    height: 300px !important;
+    height: 310px !important;
   }
   .recipe .swiper .swiper-slide {
-    height: 200px !important;
+    height: 210px !important;
   }
   .recipe .button {
     margin-bottom: 20px !important;
@@ -1472,11 +1476,11 @@
   .recipe .recipe__font__p {
     font-size: 18px !important;
   }
+  .recipe .img__resp {
+    max-width: 115% !important;
+  }
   .recipe__font__h5 {
     font-size: 18px !important;
-  }
-  .img__resp {
-    max-width: 115% !important;
   }
   .recipe__icon__size {
     font-size: 13px !important;
@@ -1557,7 +1561,7 @@
   color: rgb(72, 72, 72);
 }
 .recipe__detail .background__color__tr {
-  background-color: black;
+  background-color: #ffc107;
   color: #fff;
   line-height: 40px;
 }
@@ -1647,7 +1651,11 @@
     height: 250px !important;
   }
   .recipe__detail .swiper .swiper-slide {
-    height: 125px !important;
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .recipe__detail .img__resp {
+    max-width: 110% !important;
   }
   .table__tr__size {
     font-size: 10px !important;
@@ -1659,9 +1667,6 @@
   }
   .recipe__font__h5 {
     font-size: 15px !important;
-  }
-  .img__resp {
-    max-width: 150% !important;
   }
   .recipe__icon__size {
     font-size: 8px !important;
@@ -1680,10 +1685,14 @@
     text-align: -webkit-center !important;
   }
   .recipe__detail .swiper {
-    height: 250px !important;
+    height: 260px !important;
   }
   .recipe__detail .swiper .swiper-slide {
-    height: 150px !important;
+    width: 175px !important;
+    height: 185px !important;
+  }
+  .recipe__detail .img__resp {
+    max-width: 110% !important;
   }
   .table__tr__size {
     font-size: 12px !important;
@@ -1695,9 +1704,6 @@
   }
   .recipe__font__h5 {
     font-size: 16px !important;
-  }
-  .img__resp {
-    max-width: 125% !important;
   }
   .recipe__icon__size {
     font-size: 10px !important;
@@ -1719,7 +1725,11 @@
     height: 275px !important;
   }
   .recipe__detail .swiper .swiper-slide {
-    height: 175px !important;
+    width: 175px !important;
+    height: 200px !important;
+  }
+  .recipe__detail .img__resp {
+    max-width: 110% !important;
   }
   .table__tr__size {
     font-size: 14px !important;
@@ -1731,9 +1741,6 @@
   }
   .recipe__font__h5 {
     font-size: 17px !important;
-  }
-  .img__resp {
-    max-width: 125% !important;
   }
   .recipe__icon__size {
     font-size: 12px !important;
@@ -1753,16 +1760,17 @@
     text-align: -webkit-center !important;
   }
   .recipe__detail .swiper {
-    height: 300px !important;
+    height: 320px !important;
   }
   .recipe__detail .swiper .swiper-slide {
-    height: 200px !important;
+    width: 200px !important;
+    height: 210px !important;
+  }
+  .recipe__detail .img__resp {
+    max-width: 115% !important;
   }
   .recipe__font__h5 {
     font-size: 18px !important;
-  }
-  .img__resp {
-    max-width: 115% !important;
   }
   .recipe__icon__size {
     font-size: 13px !important;
@@ -1775,7 +1783,13 @@
   }
 }
 @media (min-width: 1200px) and (max-width: 1450px) {
-  .img__resp {
+  .recipe__detail .swiper {
+    height: 300px !important;
+  }
+  .recipe__detail .swiper .swiper-slide {
+    height: 190px !important;
+  }
+  .recipe__detail .img__resp {
     max-width: 110% !important;
   }
 }
@@ -1784,6 +1798,9 @@
   padding-bottom: 60px;
   margin-left: 13%;
   margin-right: 13%;
+}
+.food__detail .comment__display__block {
+  display: block;
 }
 .food__detail .review__button {
   display: block;
@@ -2308,14 +2325,15 @@
     font-size: 0 !important;
   }
   .food__detail .swiper {
-    height: 350px !important;
+    height: 360px !important;
     text-align: -webkit-center !important;
   }
   .food__detail .swiper p {
     margin-top: 0.5rem !important;
   }
   .food__detail .swiper .swiper-slide {
-    height: 250px !important;
+    width: 250px !important;
+    height: 290px !important;
   }
   .food__detail .fa-solid, .food__detail .fas {
     font-size: 15px !important;
@@ -2324,7 +2342,7 @@
     font-size: 15px !important;
   }
   .food__detail .related__img {
-    width: 100px !important;
+    width: 250px !important;
   }
   .food__detail .related__food__ratings .icon__size {
     font-size: 8px !important;
@@ -2357,14 +2375,15 @@
     justify-content: center;
   }
   .food__detail .swiper {
-    height: 350px !important;
+    height: 360px !important;
     text-align: -webkit-center !important;
   }
   .food__detail .swiper p {
     margin-top: 0.5rem !important;
   }
   .food__detail .swiper .swiper-slide {
-    height: 250px !important;
+    width: 250px !important;
+    height: 290px !important;
   }
   .food__detail .fa-solid, .food__detail .fas {
     font-size: 15px !important;
@@ -2373,7 +2392,7 @@
     font-size: 15px !important;
   }
   .food__detail .related__img {
-    width: 140px !important;
+    width: 250px !important;
   }
   .food__detail .related__food__ratings {
     margin: 0 !important;
@@ -2403,14 +2422,15 @@
     justify-content: center;
   }
   .food__detail .swiper {
-    height: 350px !important;
+    height: 360px !important;
     text-align: -webkit-center !important;
   }
   .food__detail .swiper p {
     margin-top: 0.5rem !important;
   }
   .food__detail .swiper .swiper-slide {
-    height: 250px !important;
+    width: 250px !important;
+    height: 290px !important;
   }
   .food__detail .fa-solid, .food__detail .fas {
     font-size: 16px !important;
@@ -2419,7 +2439,7 @@
     font-size: 16px !important;
   }
   .food__detail .related__img {
-    width: 165px !important;
+    width: 250px !important;
   }
   .food__detail .related__food__ratings {
     margin: 0 !important;
@@ -2446,14 +2466,14 @@
     justify-content: center;
   }
   .food__detail .swiper {
-    height: 350px !important;
+    height: 360px !important;
     text-align: -webkit-center !important;
   }
   .food__detail .swiper p {
     margin-top: 0.5rem !important;
   }
   .food__detail .swiper .swiper-slide {
-    height: 250px !important;
+    height: 285px !important;
   }
   .food__detail .related__img {
     width: 180px !important;
@@ -2481,17 +2501,17 @@
     justify-content: center;
   }
   .food__detail .swiper {
-    height: 350px !important;
+    height: 360px !important;
     text-align: -webkit-center !important;
   }
   .food__detail .swiper p {
     margin-top: 0.5rem !important;
   }
   .food__detail .swiper .swiper-slide {
-    height: 250px !important;
+    height: 285px !important;
   }
   .food__detail .related__img {
-    width: 180px !important;
+    width: 225px !important;
   }
   .food__detail .related__food__ratings {
     margin: 0 !important;
@@ -4558,6 +4578,14 @@
     font-size: 20px;
   }
 }
+#cart {
+  transition: 0.35s;
+  cursor: pointer;
+}
+#cart:hover {
+  color: #ffc107;
+}
+
 .header {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -4684,8 +4712,8 @@
 
 .container__shopping__cart {
   margin: auto;
-  top: 9%;
-  right: 8%;
+  top: 92%;
+  right: 0%;
   position: absolute;
   z-index: 98;
 }
@@ -4722,7 +4750,26 @@
   color: #fff;
   font-family: "Kurale", serif;
 }
+.shopping__cart .scrollbar__cart {
+  margin-top: 10px;
+  height: 280px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.shopping__cart .scrollbar__cart::-webkit-scrollbar {
+  width: 10px;
+}
+.shopping__cart .scrollbar__cart::-webkit-scrollbar-track {
+  background: rgba(43, 43, 43, 0.7);
+}
+.shopping__cart .scrollbar__cart::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #ffc107;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
 .shopping__cart .shopping__cart__items {
+  margin-bottom: 1.6rem;
   padding-left: 0;
   padding-top: 20px;
 }
@@ -4730,6 +4777,7 @@
   margin-bottom: 18px;
 }
 .shopping__cart .shopping__cart__items img {
+  border-radius: 50%;
   width: 75px;
   height: 75px;
   float: left;

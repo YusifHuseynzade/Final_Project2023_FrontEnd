@@ -66,7 +66,7 @@
     <div class="navbar">
       <img src="/Images/navbar/nav-logo.png" alt="logo"/>
       <ul class="navbar__menu">
-        <li class="navbar__menu__dropdown">
+        <li class="navbar__menu__dropdown bottom__line">
           <a href="index.html">home</a>
         </li>
         <li class="navbar__menu__dropdown bottom__line">
@@ -118,46 +118,48 @@
           <a href="contact.html">Contact</a>
         </li>
         <input id="search__input" type="search" placeholder="Search" class="me-3">
-        <a href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">3</span></a>
+        <div style="display:inline-block">
+        <div id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">3</span></div>
+        <div class="container__shopping__cart">
+            <div class="shopping__cart">
+              <div class="shopping__cart__header">
+                <i class="fa fa-shopping-cart cart__icon"></i><span class="badge">3</span>
+                <div class="shopping__cart__total">
+                  <span>Total:</span>
+                  <span>$87.97</span>
+                </div>
+              </div> 
+              <ul class="shopping__cart__items scrollbar__cart">
+                <li class="clearfix">
+                  <img src="/Images/menu/food1.jpg" alt="item1" />
+                  <span class="item__name">Steak...</span>
+                  <span class="item__price">$9.99</span>
+                  <span class="item__quantity">Quantity: 01</span>
+                </li>
+          
+                <li class="clearfix">
+                  <img src="/Images/menu/food6.jpg" alt="item1" />
+                  <span class="item__name">Cizburger...</span>
+                  <span class="item__price">$49.99</span>
+                  <span class="item__quantity">Quantity: 01</span>
+                </li>
+          
+                <li class="clearfix">
+                  <img src="/Images/menu/food3.jpg" alt="item1" />
+                  <span class="item__name">Hamburger...</span>
+                  <span class="item__price">$29.99</span>
+                  <span class="item__quantity">Quantity: 01</span>
+                </li>
+              </ul>
+              <div class="text-center mb-3">
+                <a href="https://twitter.com/Dave_Conner" class="button">Checkout</a>
+              </div>
+            </div> 
+          </div> 
+        </div>
       </ul>
     </div>
 </nav>
-<div class="container__shopping__cart">
-  <div class="shopping__cart">
-    <div class="shopping__cart__header">
-      <i class="fa fa-shopping-cart cart__icon"></i><span class="badge">3</span>
-      <div class="shopping__cart__total">
-        <span>Total:</span>
-        <span>$87.97</span>
-      </div>
-    </div> 
-    <ul class="shopping__cart__items">
-      <li class="clearfix">
-        <img src="/Images/menu/food1.jpg" alt="item1" />
-        <span class="item__name">Steak...</span>
-        <span class="item__price">$9.99</span>
-        <span class="item__quantity">Quantity: 01</span>
-      </li>
-
-      <li class="clearfix">
-        <img src="/Images/menu/food6.jpg" alt="item1" />
-        <span class="item__name">Cizburger...</span>
-        <span class="item__price">$49.99</span>
-        <span class="item__quantity">Quantity: 01</span>
-      </li>
-
-      <li class="clearfix">
-        <img src="/Images/menu/food3.jpg" alt="item1" />
-        <span class="item__name">Hamburger...</span>
-        <span class="item__price">$29.99</span>
-        <span class="item__quantity">Quantity: 01</span>
-      </li>
-    </ul>
-    <div class="text-center mb-3">
-      <a href="https://twitter.com/Dave_Conner" class="button">Checkout</a>
-    </div>
-  </div> 
-</div>
   <section class="header__page" style="background-image:linear-gradient(to bottom, rgba(26, 26, 26, 0.35) 0%, rgba(47, 47, 47, 0.35) 100%), url(/Images/login_images/2.jpg);">
         <div class="container">
             <div class="row reveal active">
@@ -182,7 +184,7 @@
                               </div>
                             </div>
                             <div class = "img-select mt-4">
-                              <div class = "img-item">
+                              <div class = "img-item ms-2">
                                 <a href = "#" data-id = "1">
                                   <img src = "/Images/food_detail/6.jpg" alt = "shoe image" class="img__size">
                                 </a>
@@ -341,7 +343,7 @@
                     </div>
                   </main>
                 <hr class="page___line">
-                <h2 class="text-center reveal"><strong>May You Like Also</strong></h2>
+                <h2 class="text-center reveal"><strong>You May Also Like</strong></h2>
                 <span class="slide__font__span text-center reveal">Products</span>
                 <div class="swiper reveal">
                   <div class="swiper-wrapper">

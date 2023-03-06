@@ -2,12 +2,12 @@
 
 const imgs = document.querySelectorAll('.img-select a');
 const imgBtns = [...imgs];
-let imgId = document.querySelector('.img-showcase img ');
+let imgId = 1;
 
 imgBtns.forEach((imgItem) => {
     imgItem.addEventListener('click', (event) => {
         event.preventDefault();
-        imgId = document.querySelector('.img-showcase img');
+        imgId = imgItem.dataset.id;
         slideImage();
     });
 });
