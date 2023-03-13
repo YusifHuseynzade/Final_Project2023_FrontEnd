@@ -29,6 +29,9 @@
     padding-top: 0!important;
     padding-bottom: 0!important;
    
+    .active {
+      color: $background__color__yellow;
+    }
    
     img {
       width: 220px;

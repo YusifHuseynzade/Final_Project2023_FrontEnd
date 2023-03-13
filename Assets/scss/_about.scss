@@ -40,7 +40,6 @@
     .img__distance {
         --bs-gutter-x: 0.5rem;
     }
-   
 }
 
 .awards {
@@ -85,6 +84,131 @@
     }
     .swiper__award {
         overflow: hidden;
+    }
+}
+
+.team {
+    @include container__pages();
+    .brush__dec {
+        @include brush__dec();
+    }
+    &__h2 {
+        font-weight: 700;
+        color: $color__dark__gray;
+        font-family: $font__family__kurale;
+    }
+    h5 {
+        font-weight: 700;
+        color: $color__dark__gray;
+        font-family: $font__family__kurale;
+    }
+    .pages__header {
+        border: none;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .pages__header::after {
+        content: "";
+        display: block;
+        position: relative;
+        height: 3px;
+        width: 113px;
+        background-color: $color__yellow;
+        margin: 0 auto;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__p {
+        color: $color__dark__gray;
+        font-family: $font__family__cormorant;
+        font-size: 23px;
+        font-weight: 600;
+    }
+    .designation__p {
+        color: $color__dark__gray;
+        font-family: $font__family__cormorant;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    & i {
+        color: $color__dark__gray;
+        font-size: 20px;
+        transition: 0.35s;
+        &:hover {
+            color: $color__yellow;
+        }
+    }
+    .border__bottom {
+        border-bottom: 1px solid #d3d3d3;
+        padding: 20px 0;
+    }
+}
+
+#total__background__fixed {
+    background-attachment: fixed;
+}
+
+.total {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .total__container {
+        @include container__pages();
+      }
+    .brush__dec {
+        @include brush__dec();
+    }
+    h2 {
+        font-weight: 700;
+        color: $color__yellow;
+        font-family: $font__family__kurale;
+    }
+    h6 {
+        font-weight: 700;
+        color: $color__white;
+        font-family: $font__family__kurale;
+    }
+    
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .total {
+        .col-lg-3 {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .total {
+        .col-lg-3 {
+            width: 25%;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .team {
+        &__img {
+            width: 90%;
+        }
+    }
+  }
+
+@media (min-width:576px) and (max-width:768px) {
+    .team {
+        .col-lg-3 {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .team {
+        .col-lg-3 {
+            width: 50%;
+        }
     }
 }
 
