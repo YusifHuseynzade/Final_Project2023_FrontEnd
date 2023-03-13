@@ -34,6 +34,54 @@
   margin-left: 10%;
   margin-right: 10%;
 }
+.account .font__h4__cart {
+  font-weight: 700;
+  color: rgb(72, 72, 72);
+  font-family: "Kurale", serif;
+}
+.account .table__background {
+  background-color: #f9f9f9;
+}
+.account .table__borders {
+  border: none;
+  border-radius: 6px;
+  padding: 25px;
+}
+.account .table__text__font {
+  font-size: 18px;
+  font-family: "Kurale", serif;
+  color: rgb(72, 72, 72);
+}
+.account .text__decor__a {
+  text-decoration: none;
+  color: rgb(72, 72, 72);
+  cursor: pointer;
+  transition: 0.35s;
+}
+.account .text__decor__a:hover {
+  color: #f6d51b;
+}
+.account .table > :not(:last-child) > :last-child > * {
+  border-bottom-color: #d2d2d2;
+}
+.account .cart__price__color {
+  color: #ffc107;
+}
+.account .cart__borders {
+  border: 1px solid #d2d2d2;
+}
+.account .cart__borders__price {
+  border-bottom: 1px solid #d2d2d2;
+}
+.account .background__color__tr {
+  background-color: #ffc107;
+  color: #fff;
+  line-height: 40px;
+}
+.account .cart__text__position {
+  vertical-align: middle;
+  text-align: center;
+}
 .account__form {
   border: 1.5px solid #d2d2d2;
   border-radius: 5px;

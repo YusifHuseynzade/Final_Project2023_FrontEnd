@@ -29,6 +29,7 @@
           <ul class="drop__menu">
             <li><a href="about.html">About</a></li>
             <li><a href="login.html">Login</a></li>
+            <li><a href="profile.html">My Account</a></li>
             <li><a href="404_error.html">404 Page</a></li>
             <li><a href="register.html">Register</a></li>
             <li><a href="checkout.html">Checkout</a></li>
@@ -43,7 +44,6 @@
             <ul class="drop__menu">
               <li><a href="shop.html">Shop</a></li>
               <li><a href="shop_cart.html">Shop Cart</a></li>
-              <li><a href="profile.html">My Account</a></li>
             </ul>
           </li>
           <li>
@@ -70,13 +70,16 @@
           <a href="index.html">home</a>
         </li>
         <li class="navbar__menu__dropdown bottom__line">
-          <a href="/index.html">pages</a>
+          <a href="/index.html" class="active">pages</a>
           <ul class="second__menu">
             <li class="second__menu__item">
               <a href="/about.html"><span class="bottom__line">about</span></a>
             </li>
             <li class="second__menu__item">
               <a href="/login.html"><span class="bottom__line">login</span></a>
+            </li>
+            <li class="second__menu__item">
+              <a href="/profile.html"><span class="bottom__line" class="active">my account</span></a>
             </li>
             <li class="second__menu__item">
               <a href="/404_error.html"><span class="bottom__line">404 page</span> </a>
@@ -96,13 +99,10 @@
           </ul>
         </li>
         <li class="navbar__menu__dropdown bottom__line">
-            <a href="/shop.html" class="active">Shop</a>
+            <a href="/shop.html">Shop</a>
             <ul class="second__menu">
               <li class="second__menu__item">
                 <a href="/shop_cart.html"><span class="bottom__line">shop cart</span></a>
-              </li>
-              <li class="second__menu__item">
-                <a href="/profile.html"><span class="bottom__line" class="active">my account</span></a>
               </li>
             </ul>
           </li>
@@ -155,7 +155,8 @@
                 </li>
               </ul>
               <div class="text-center mb-3">
-                <a href="https://twitter.com/Dave_Conner" class="button">Checkout</a>
+                <a href="/checkout.html" class="button me-3">Checkout</a>
+                <a href="/shop_cart.html" class="button me-3">View Cart</a>
               </div>
             </div> 
           </div> 
@@ -204,6 +205,39 @@
                         <button class="button btn__font" type="submit">SAVE CHANGES</button>
                         </div>
                 </form>
+                </div>
+                <div class="col-lg-12 mt-5">
+                  <h4 class="font__h4__cart mb-4 text-center">ALL DELİVERED ORDERS</h4>
+                  <table class="table table-hover table__background table__borders table__text__font cart__text__position mb-5">
+                      <thead>
+                        <tr class="background__color__tr cart__thead__tr">
+                          <th scope="col">ORDER</th>
+                          <th scope="col">DATE</th>
+                          <th scope="col">STATUS</th>
+                          <th scope="col">TOTAL</th>
+                        </tr>
+                      </thead>
+                      <tbody class="cart__tbody">
+                        <tr>
+                          <td scope="row" class="cart__borders">900</td>
+                          <td class="cart__borders">June 15, 2022</td>
+                          <td class="cart__borders">Delivered</td>
+                          <td class="cart__borders">$173 for 4 items</td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="cart__borders">873</td>
+                          <td class="cart__borders">June 18, 2022</td>
+                          <td class="cart__borders">Delivered</td>
+                          <td class="cart__borders">$55 for 2 items</td>
+                        </tr>
+                        <tr>
+                          <td scope="row" class="cart__borders">629</td>
+                          <td class="cart__borders">July 15, 2021</td>
+                          <td class="cart__borders">Delivered</td>
+                          <td class="cart__borders">$109 for 3 items</td>
+                        </tr>
+                      </tbody>
+                    </table>
                 </div>
             </div>
         </div>

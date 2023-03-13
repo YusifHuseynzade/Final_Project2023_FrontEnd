@@ -36,6 +36,57 @@
         margin-left: 10%;
         margin-right: 10%;
     }
+
+    .font__h4__cart {
+      font-weight: 700;
+      color: $color__dark__gray;
+      font-family: $font__family__kurale;
+  }
+    .table__background {
+      background-color: $background__color__light;
+    }
+  .table__borders {
+      border: none;
+      border-radius: 6px;
+      padding: 25px;
+  }
+  .table__text__font {
+      font-size: 18px;
+      font-family: $font__family__kurale;
+      color: $color__dark__gray;
+  }
+  .text__decor__a {
+      text-decoration: none;
+      color: $color__dark__gray;
+      cursor: pointer;
+      transition: 0.35s;
+      &:hover {
+          color: $color__yellow;
+      }
+  }
+  .table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #d2d2d2; 
+  }
+  .cart__price__color {
+    color: $background__color__yellow;
+  }
+  .cart__borders {
+    border: 1px solid #d2d2d2;
+}
+  .cart__borders__price {
+      border-bottom: 1px solid #d2d2d2;
+  }
+  .background__color__tr {
+      background-color: $background__color__yellow;
+      color: $color__white;
+      line-height: 40px;
+  }
+  .cart__text__position {
+      vertical-align: middle;
+      text-align: center;
+  }
+ 
+
     &__form {
         border: 1.5px solid #d2d2d2;
         border-radius: 5px;
